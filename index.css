@@ -343,7 +343,7 @@ p {
 .menu-card-item-div {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 100px;
+  grid-template-rows: 120px;
   align-items: center;
   padding: 10px;
   margin-bottom: 12px;
@@ -351,9 +351,12 @@ p {
 }
 
 .menu-item-image-div {
+  max-width: 200px;
 }
 
 .menu-item-img {
+  height: 100%;
+  width: 100%;
 }
 
 .menu-item-add-btn {

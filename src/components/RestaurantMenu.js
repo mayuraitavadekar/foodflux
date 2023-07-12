@@ -84,14 +84,16 @@ const RestaurantMenu = (props) => {
                       </div>
                     </div>
                     <div className="menu-item-image-div">
-                      <img
-                        src={
-                          CDN_URL +
-                          menuCategory?.card?.card?.itemCards[0]?.card?.info
-                            ?.imageId
-                        }
-                        className="menu-item-img"
-                      />
+                      <div className="img-container">
+                        <img
+                          src={
+                            CDN_URL +
+                            menuCategory?.card?.card?.itemCards[0]?.card?.info
+                              ?.imageId
+                          }
+                          className="menu-item-img"
+                        />
+                      </div>
                     </div>
                     <div className="menu-item-add-btn-div">
                       <button className="menu-item-add-btn">Add</button>
