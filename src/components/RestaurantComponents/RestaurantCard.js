@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CDN_URL, DEFAULT_IMAGE_URL } from "../utils/constants";
+import { CDN_URL, DEFAULT_IMAGE_URL } from "../../utils/constants";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
@@ -23,8 +23,8 @@ const RestaurantCard = (props) => {
         className="res-card-img"
       />
       <div className="p-32">
-        <h3 className="resName">{name}</h3>
-        <h4 className="cousines">{cuisines.join(", ")}</h4>
+        <h3 className="resName">{name.substring(0, 40) + "..."}</h3>
+        <h4 className="cousines">{cuisines.slice(1, 5).join(", ")}</h4>
         <h4 className="avg-rating">{avgRating}</h4>
         <h4 className="cost-for-two">₹ {costForTwo / 100} FOR TWO</h4>
         <h4 className="delivery-time">{deliveryTime} Minutes</h4>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { CDN_URL } from "../utils/constants";
+import { CDN_URL } from "../../utils/constants";
+import ImageNotAvailable from "../../assets/images/img-not-available.jpg";
 
 const RestaurantMenu = (props) => {
   const { id } = useParams();
@@ -48,10 +49,17 @@ const RestaurantMenu = (props) => {
             </h3>
             <div className="additional-details-div">
               <div className="cost-for-two-div">
-                {restaurantData?.cards[0]?.card?.card?.info?.costForTwoMessage}
+                <div className="cost-for-two-subdiv">
+                  {
+                    restaurantData?.cards[0]?.card?.card?.info
+                      ?.costForTwoMessage
+                  }
+                </div>
               </div>
               <div className="avg-rating-div">
-                {restaurantData?.cards[0]?.card?.card?.info?.avgRating}
+                <div className="rating-div">
+                  {restaurantData?.cards[0]?.card?.card?.info?.avgRating}
+                </div>
               </div>
             </div>
           </div>
@@ -85,14 +93,30 @@ const RestaurantMenu = (props) => {
                     </div>
                     <div className="menu-item-image-div">
                       <div className="img-container">
-                        <img
+                        {menuCategory?.card?.card?.itemCards[0]?.card?.info
+                          ?.imageId !== undefined ? (
+                          <img
+                            src={
+                              CDN_URL +
+                              menuCategory?.card?.card?.itemCards[0]?.card?.info
+                                ?.imageId
+                            }
+                            className="menu-item-img"
+                          />
+                        ) : (
+                          <img
+                            src={ImageNotAvailable}
+                            className="menu-item-img"
+                          />
+                        )}
+                        {/* <img
                           src={
                             CDN_URL +
                             menuCategory?.card?.card?.itemCards[0]?.card?.info
                               ?.imageId
                           }
                           className="menu-item-img"
-                        />
+                        /> */}
                       </div>
                     </div>
                     <div className="menu-item-add-btn-div">

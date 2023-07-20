@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard from "./RestaurantComponents/RestaurantCard";
 import { useEffect, useState } from "react";
-import RestaurantListShimmerCard from "./RestaurantListShimmerCard";
+import RestaurantListShimmerCard from "./RestaurantComponents/RestaurantListShimmerCard";
 import SearchedRestaurantNotAvailable from "./SearchedRestaurantNotAvailable";
 
 const Body = () => {

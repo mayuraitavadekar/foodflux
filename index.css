@@ -46,7 +46,10 @@ p {
 }
 
 .body {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 150px;
   background-color: #f5f5f5;
 }
 
@@ -333,6 +336,8 @@ p {
   padding-top: 24px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 150px;
+  background-color: #cad5e2;
 }
 
 .restaurant-menu-header-div {
@@ -348,6 +353,9 @@ p {
   padding: 10px;
   margin-bottom: 12px;
   overflow-y: hidden;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 1;
 }
 
 .menu-item-image-div {
@@ -378,6 +386,103 @@ p {
 
 .category-name {
   padding: 5px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-container {
+  background-color: #6a1b4d;
+  padding: 20px;
+}
+
+.footer-heading {
+  color: white;
+}
+
+.developed-by-heading {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-about-div {
+  background-color: #f5f5f5;
+}
+
+.main-heading-div-about-us {
+  text-align: center;
+}
+
+.main-heading-about-us {
+  padding: 20px;
+}
+
+.description-div {
+  padding: 50px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.description-div-contact-us {
+  text-align: center;
+  padding: 50px;
+}
+
+.description-contact-us {
+  font-size: 20px;
+}
+
+.main-contact-us-div {
+  display: flex;
+  justify-content: center;
+}
+
+.github {
+  font-size: 20px;
+}
+
+.github-heading-div {
+  text-align: center;
+}
+
+.github-div {
+  padding: 10px;
+}
+
+.linkedin-div {
+  padding: 10px;
+}
+
+.restaurant-image-container {
+  text-align: center;
+}
+
+.rating-div {
+  background-color: gold;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.cost-for-two-subdiv {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.restaurant-header {
+  background-color: #f5f5f5;
+}
+
+.avg-rating-div {
+  padding-bottom: 10px;
 }
 
 /* .menu-item-details-div {
